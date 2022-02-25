@@ -1,0 +1,489 @@
+input::placeholder {
+  color: #4d4d4d;
+  opacity: 0.75;
+}
+input:-ms-input-placeholder {
+  color: #4d4d4d;
+  opacity: 0.75;
+}
+input::-ms-input-placeholder {
+  color: #4d4d4d;
+  opacity: 0.75;
+}
+.form .text-area {
+  background: #66d6ff;
+  text-align: center;
+  position: relative;
+}
+.form .text-area .container h1 {
+  color: #000;
+  margin: 0;
+  font-weight: 600;
+}
+.form .text-area .container h1 span {
+  display: block;
+}
+.form .text-area .container h4 {
+  color: #000;
+  font-weight: 500;
+  letter-spacing: 0.17px;
+}
+.form .text-area .container h4 a {
+  color: #000;
+  text-decoration: none;
+  display: inline-block;
+  font-weight: 700;
+}
+.form .text-area::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  width: 100%;
+  background: #66d6ff;
+}
+.form .container .form-area {
+  background: #edfeff;
+  border-radius: 30px;
+  position: relative;
+  z-index: 1;
+}
+.form .container .form-area .content {
+  margin: 0 auto;
+}
+.form .container .form-area .content ul {
+  margin: 0;
+  padding: 0;
+}
+.form .container .form-area .content ul li {
+  list-style: none;
+  display: inline-block;
+}
+.form .container .form-area .content h5,
+.form .container .form-area .content label {
+  color: #4d4d4d;
+  opacity: 0.75;
+  font-weight: 500;
+}
+.form .container .form-area .content input,
+.form .container .form-area .content select {
+  border: 1px solid #cccccc;
+  color: #000;
+  background: rgba(255, 255, 255, 0.75);
+  outline: none;
+  letter-spacing: 0.5px;
+}
+.form .container .form-area .content input:focus,
+.form .container .form-area .content select:focus {
+  border-color: #00baf2;
+}
+.form .container .form-area .content input[type="checkbox"],
+.form .container .form-area .content input[type="radio"] {
+  position: relative;
+  top: -1px;
+  border: none;
+}
+.form .container .form-area .content select {
+  appearance: none;
+  -webkit-appearance: none;
+  color: #777;
+}
+.form .container .form-area .content select.active {
+  color: #000;
+}
+.form .container .form-area .content .reset-all {
+  line-height: 22px;
+  color: #000;
+  display: inline-block;
+  margin-right: 30px;
+  font-weight: 500;
+  letter-spacing: 0.12px;
+  cursor: pointer;
+}
+.error {
+  font-size: 12px;
+  line-height: 16px;
+  color: #f00;
+  margin: -20px 0 30px;
+  display: none;
+  font-weight: 400;
+}
+.error-field {
+  border-color: #f00 !important;
+}
+.error-field h5,
+.error-field label {
+  color: #f00 !important;
+}
+.error-field .error {
+  margin-top: 20px;
+}
+.select {
+  position: relative;
+}
+.select::after {
+  content: "";
+  position: absolute;
+  top: 30px;
+  right: 30px;
+  border-top: 7px solid #4d4d4d;
+  border-right: 7px solid transparent;
+  border-left: 7px solid transparent;
+  opacity: 0.75;
+}
+#input-feedback {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  overflow: hidden;
+  z-index: 999;
+  text-align: center;
+  border-radius: 24px;
+  background: #fff;
+  box-sizing: border-box;
+  display: none;
+}
+#input-feedback .close {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  cursor: pointer;
+}
+#input-feedback h3 {
+  margin: 5px 0 10px;
+}
+#input-feedback p {
+  font-size: 17px;
+  line-height: 25px;
+  margin: 0 0 50px;
+  font-weight: 500;
+}
+#input-feedback p strong {
+  font-weight: 700;
+}
+#input-feedback .popop-logo {
+  width: 115px;
+  margin: 0 auto 50px;
+}
+#input-feedback .popop-logo img {
+  width: 100%;
+  display: block;
+}
+#input-feedback span {
+  display: inline-block;
+  font-weight: 700;
+  color: #002970;
+  border: 1px solid #002970;
+  border-radius: 35px;
+  cursor: pointer;
+  position: relative;
+}
+#input-feedback span::before {
+  top: 20px;
+}
+#input-feedback span::after {
+  top: 24px;
+}
+#input-feedback::before,
+#input-feedback::after {
+  content: "";
+  width: 100%;
+  height: 13px;
+  position: absolute;
+  left: 0;
+}
+#input-feedback::before {
+  background: #00b9f5;
+  bottom: 13px;
+}
+#input-feedback::after {
+  background: #213368;
+  bottom: 0px;
+}
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 99;
+  background: #ccc;
+  opacity: 0.7;
+  display: none;
+}
+.hidden {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  width: 1px;
+  height: 1px;
+  background: none;
+  opacity: 0;
+  overflow: hidden;
+}
+@media (min-width: 768px) {
+  .form .text-area .container h1 {
+    font-size: 60px;
+    line-height: 70px;
+    letter-spacing: -0.6px;
+  }
+  .form .text-area .container h4 {
+    font-size: 17px;
+    line-height: 25px;
+    margin: 40px 0 65px;
+  }
+  .form .text-area .container h4 a {
+    font-size: 15px;
+    line-height: 25px;
+    margin-left: 20px;
+  }
+  .form .text-area .container .art-img {
+    width: 370px;
+    margin: 120px auto 0;
+  }
+  .form .text-area::after {
+    height: 225px;
+    bottom: -225px;
+  }
+  .form .container .form-area {
+    margin-bottom: 135px;
+  }
+  .form .container .form-area .content {
+    width: 570px;
+  }
+  .form .container .form-area .content h5 {
+    margin: 0 0 20px 30px;
+    font-size: 15px;
+    line-height: 22px;
+  }
+  .form .container .form-area .content .checkboxs,
+  .form .container .form-area .content .radio-btn {
+    margin-left: 30px;
+  }
+  .form .container .form-area .content .checkboxs h5,
+  .form .container .form-area .content .radio-btn h5 {
+    margin-left: 0;
+  }
+  .form .container .form-area .content .checkboxs,
+  .form .container .form-area .content .radio-btn,
+  .form .container .form-area .content input,
+  .form .container .form-area .content select {
+    margin-bottom: 30px;
+  }
+  .form .container .form-area .content input,
+  .form .container .form-area .content select {
+    font-size: 15px;
+    line-height: 22px;
+    padding: 22px 30px;
+    width: 100%;
+    box-sizing: border-box;
+    border-radius: 8px;
+  }
+  .form .container .form-area .content input[type="checkbox"],
+  .form .container .form-area .content input[type="radio"] {
+    margin: 0 7px 0 0;
+    font-size: 15px;
+    line-height: 25px;
+    padding: 0;
+    width: auto;
+  }
+  .form .container .form-area .content label {
+    font-size: 15px;
+    line-height: 22px;
+    margin-right: 25px;
+  }
+  .form .container .form-area .content label:last-child {
+    margin-right: 0;
+  }
+  .form .container .form-area .content .checkboxs ul li label {
+    margin-right: 25px;
+  }
+  .form .container .form-area .content .checkboxs ul li:last-child label {
+    margin-right: 0;
+  }
+  .form .container .form-area .content .text-right {
+    margin-top: 50px;
+  }
+  .form .container .form-area .content .reset-all {
+    font-size: 15px;
+  }
+  #input-feedback h3 {
+    font-size: 46px;
+    line-height: 62px;
+  }
+  #input-feedback span {
+    font-size: 15px;
+    line-height: 17px;
+    padding: 15px 50px 15px 35px;
+  }
+  #input-feedback span::before,
+  #input-feedback span::after {
+    right: 30px;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  .form .text-area {
+    padding: 100px 0px 0;
+  }
+  .form .container .form-area {
+    padding: 50px;
+  }
+  .form #input-feedback {
+    padding: 70px 185px 95px;
+    width: 700px;
+  }
+}
+@media (min-width: 992px) {
+  .form .text-area {
+    padding: 135px 0px 0;
+  }
+  .form .container {
+    width: 970px;
+  }
+  .form .container .form-area {
+    background: #edfeff;
+    padding: 100px 210px;
+  }
+  .form #input-feedback {
+    padding: 70px 285px 95px;
+    width: 900px;
+  }
+}
+@media (min-width: 1200px) {
+  #input-feedback {
+    padding: 70px 335px 95px;
+    width: 1000px;
+  }
+}
+@media (max-width: 767px) {
+  .form .text-area {
+    padding-top: 75px;
+  }
+  .form .text-area .container h1 {
+    font-size: 36px;
+    line-height: 42px;
+    padding: 0 15px;
+    font-weight: 700;
+  }
+  .form .text-area .container h4 {
+    font-size: 17px;
+    line-height: 19px;
+    margin: 14px 0 20px;
+  }
+  .form .text-area .container h4 span {
+    display: block;
+    margin-top: 5px;
+  }
+  .form .text-area .container h4 span a {
+    font-size: 12px;
+    line-height: 32px;
+  }
+  .form .text-area .container .art-img {
+    width: 90%;
+    margin: 95px auto 0;
+  }
+  .form .text-area::after {
+    height: 160px;
+    bottom: -160px;
+  }
+  .form .container .form-area {
+    padding: 65px 0 50px;
+    margin-bottom: 75px;
+    border-radius: 20px;
+  }
+  .form .container .form-area .content {
+    width: 90%;
+  }
+  .form .container .form-area .content h5 {
+    margin: 0 0 15px;
+    font-size: 12px;
+    line-height: 18px;
+  }
+  .form .container .form-area .content .checkboxs,
+  .form .container .form-area .content .radio-btn {
+    margin-left: 20px;
+  }
+  .form .container .form-area .content .checkboxs,
+  .form .container .form-area .content .radio-btn,
+  .form .container .form-area .content input,
+  .form .container .form-area .content select {
+    margin-bottom: 20px;
+  }
+  .form .container .form-area .content input,
+  .form .container .form-area .content select {
+    font-size: 12px;
+    line-height: 18px;
+    padding: 20px;
+    width: 100%;
+    box-sizing: border-box;
+    border-radius: 8px;
+  }
+  .form .container .form-area .content input[type="checkbox"],
+  .form .container .form-area .content input[type="radio"] {
+    margin: 0 5px 0 0;
+    padding: 0;
+    width: auto;
+    top: 2px;
+  }
+  .form .container .form-area .content label {
+    font-size: 12px;
+    line-height: 18px;
+    margin-right: 25px;
+  }
+  .form .container .form-area .content label:last-child {
+    margin-right: 0;
+  }
+  .form .container .form-area .content .checkboxs ul {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .form .container .form-area .content .checkboxs ul li label {
+    margin-right: 25px;
+  }
+  .form .container .form-area .content .checkboxs ul li:last-child label {
+    margin-right: 0;
+  }
+  .form .container .form-area .content .checkboxs ul li:nth-child(1),
+  .form .container .form-area .content .checkboxs ul li:nth-child(3) {
+    width: 65%;
+  }
+  .form .container .form-area .content .checkboxs ul li:nth-child(2),
+  .form .container .form-area .content .checkboxs ul li:nth-child(4) {
+    width: 35%;
+  }
+  .form .container .form-area .content .select::after {
+    top: 25px;
+    right: 20px;
+    border-top: 5px solid #4d4d4d;
+    border-right: 5px solid transparent;
+    border-left: 5px solid transparent;
+  }
+  .form .container .form-area .content .text-right {
+    margin-top: 25px;
+  }
+  .form .container .form-area .content .reset-all {
+    font-size: 12px;
+  }
+  .form .container .error {
+    margin-top: -10px;
+  }
+  .form #input-feedback {
+    padding: 60px 35px 85px;
+    width: 320px;
+  }
+  .form #input-feedback h3 {
+    font-size: 36px;
+    line-height: 46px;
+  }
+  .form #input-feedback span {
+    font-size: 12px;
+    line-height: 21px;
+    padding: 13px 35px 13px 25px;
+  }
+  .form #input-feedback span::before,
+  .form #input-feedback span::after {
+    right: 20px;
+  }
+}
+
+/*# sourceMappingURL=form.css.map */

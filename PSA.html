@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+        content="target-densitydpi=device-dpi; width=device-width; initial-scale=1.0; maximum-scale=4; user-scalable=0;">
+    <title>PSA Form - Fill Up the form to Become a Paytm Service
+        Agent</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="form.css">
+    
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <div class="mobile-nav-handler"></div>
+            <div class="logo">
+                <a href="https://paytm.com/psa"><img src="img/paytm-service-agent-logo.svg"
+                        alt="Paytm Service Agent"></a>
+            </div>
+            <div class="header-btn">
+                <a href="https://paytm.com/offer/psa/form" class="btn btn--sky btn--arrow" id="headerApplyBtn">Apply
+                    Now</a>
+            </div>
+        </div>
+    </header>
+    <div class="form">
+        <div class="text-area">
+            <div class="container">
+                <h1>Fill up this Form to Become a<span>Paytm Service
+                        Agent</span></h1>
+            </div>
+        </div>
+        <div class="container">
+            <div class="form-area">
+                <form id="form" target="_self" onsubmit="return postToGoogle();" action="" name="form">
+                    <div class="content">
+                        <input placeholder="Name*" name="name" id="nameField">
+                        <div class="error name-error">
+                            Please enter your name
+                        </div>
+                        <div class="radio-btn">
+                            <h5>Gender</h5><input type="radio" value="Male" name="gender" id="male"><label
+                                for="male">Male</label>
+                            <input type="radio" value="Female" name="gender" id="female"><label
+                                for="female">Female</label>
+                            <input type="radio" value="Others" name="gender" id="others"><label
+                                for="others">Others</label>
+                            <div class="error gender-error">
+                                Please select gender
+                            </div>
+                        </div>
+                        <div class="select">
+                            <select id="stateField"
+                                onchange="document.getElementById('stateField').classList.add('active')">
+                                <option value="">
+                                    Select State*
+                                </option>
+                                <option value="Andhra Pradesh">
+                                    Andhra Pradesh
+                                </option>
+                                <option value="Arunachal Pradesh">
+                                    Arunachal Pradesh
+                                </option>
+                                <option value="Assam">
+                                    Assam
+                                </option>
+                                <option value="Bihar">
+                                    Bihar
+                                </option>
+                                <option value="Chhattisgarh">
+                                    Chhattisgarh
+                                </option>
+                                <option value="Delhi NCR">
+                                    Delhi NCR
+                                </option>
+                                <option value="Goa">
+                                    Goa
+                                </option>
+                                <option value="Gujarat">
+                                    Gujarat
+                                </option>
+                                <option value="Haryana">
+                                    Haryana
+                                </option>
+                                <option value="Himachal Pradesh">
+                                    Himachal Pradesh
+                                </option>
+                                <option value="Jharkhand">
+                                    Jharkhand
+                                </option>
+                                <option value="Karnataka">
+                                    Karnataka
+                                </option>
+                                <option value="Kerala">
+                                    Kerala
+                                </option>
+                                <option value="Madhya Pradesh">
+                                    Madhya Pradesh
+                                </option>
+                                <option value="Maharashtra">
+                                    Maharashtra
+                                </option>
+                                <option value="Manipur">
+                                    Manipur
+                                </option>
+                                <option value="Meghalaya">
+                                    Meghalaya
+                                </option>
+                                <option value="Mizoram">
+                                    Mizoram
+                                </option>
+                                <option value="Nagaland">
+                                    Nagaland
+                                </option>
+                                <option value="Odisha">
+                                    Odisha
+                                </option>
+                                <option value="Punjab">
+                                    Punjab
+                                </option>
+                                <option value="Rajasthan">
+                                    Rajasthan
+                                </option>
+                                <option value="Sikkim">
+                                    Sikkim
+                                </option>
+                                <option value="Tamil Nadu">
+                                    Tamil Nadu
+                                </option>
+                                <option value="Telangana">
+                                    Telangana
+                                </option>
+                                <option value="Tripura">
+                                    Tripura
+                                </option>
+                                <option value="Uttar Pradesh">
+                                    Uttar Pradesh
+                                </option>
+                                <option value="Uttarakhand">
+                                    Uttarakhand
+                                </option>
+                                <option value="West Bengal">
+                                    West Bengal
+                                </option>
+                            </select>
+                        </div>
+                        <div class="error state-error">
+                            Please select state
+                        </div><input placeholder="City*" name="city" id="cityField">
+                        <div class="error city-error">
+                            Please enter city
+                        </div><input placeholder="Pincode*" name="pincode" id="pincodeField" maxlength="6">
+                        <div class="error pincode-error">
+                            Please enter valid pincode
+                        </div><input type="email" placeholder="Email ID*" name="email" id="emailField">
+                        <div class="error email-error">
+                            Please enter valid email ID
+                        </div><input placeholder="Contact No.*" name="mobile" id="mobField" pattern="[56789][0-9]{9}"
+                            maxlength="10">
+                        <div class="error mobile-error">
+                            Please enter valid mobile number
+                        </div>
+                        <div class="clear"></div>
+                        <div class="select">
+                            <select id="eduField"
+                                onchange="document.getElementById('eduField').classList.add('active')">
+                                <option value="">
+                                    Educational Qualification*
+                                </option>
+                                <option value="10th Board">
+                                    10th Board
+                                </option>
+                                <option value="12th Board">
+                                    12th Board
+                                </option>
+                                <option value="Degree">
+                                    Degree
+                                </option>
+                                <option value="Diploma">
+                                    Diploma
+                                </option>
+                            </select>
+                        </div>
+                        <div class="error education-error">
+                            Please select education qualification
+                        </div>
+                        <div class="clear"></div><input id="dobField" placeholder="Date of Birth*" name="dob"
+                            data-toggle="datepicker">
+                        <div class="error dob-error">
+                            Please select date of birth
+                        </div>
+
+                        <input type="radio" value="BC Agent" name="tend" id="male"><label
+                                for="agent">1.BC Agent</label>
+                            <input type="radio" value="BC Distributor" name="tend" id="female"><label
+                                for="dist">2.BC Distributor</label>
+
+                        <div class="text-right">
+                            <span class="reset-all" onclick="resetAll()">Reset</span> <button type="submit"
+                                class="btn btn--sky btn--arrow">Submit</button>
+                        </div>
+                        <div id="signup" class="hidden"></div>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+    </div>
+    
+    </footer>
+   
+</body>
+
+</html>
